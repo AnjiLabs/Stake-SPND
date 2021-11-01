@@ -1,0 +1,37 @@
+{
+    "name": "bamboo",
+    "version": "0.0.1",
+    "description": "SafePanda bamboo staking",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "start": "webpack serve --config webpack.config.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nwhite89/bamboo.git"
+    },
+    "private": true,
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nwhite89/bamboo/issues"
+    },
+    "homepage": "https://github.com/nwhite89/bamboo#readme",
+    "devDependencies": {
+        "@types/web3": "~1.2.2",
+        "css-loader": "~5.2.4",
+        "file-loader": "~6.2.0",
+        "html-webpack-plugin": "~5.3.1",
+        "raw-loader": "~4.0.2",
+        "style-loader": "~2.0.0",
+        "ts-loader": "~9.1.2",
+        "typescript": "~4.2.4",
+        "url-loader": "~4.1.1",
+        "web3": "~1.3.5",
+        "webpack": "~5.36.2",
+        "webpack-cli": "~4.7.0",
+        "webpack-dev-server": "~3.11.2"
+    }
+}

@@ -1,0 +1,79 @@
+<div class="stake">
+    <table class="stake-card">
+        <thead>
+            <tr>
+                <td>
+                    <div class="stake-card-header">Earn <span class="stake-card-highlight">BMBO</span></div>
+                    <div style="font-size: 18px;">Stake <span class="stake-card-highlight">SPND</span></div>
+                </td>
+                <td class="stake-card-logo"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="stake-detail-header">Total <span class="stake-card-highlight">SPND</span></div>
+                    <div id="panda_balance" title="Please connect to BSC" class="stake-body-text">—</div>
+                </td>
+                <td>
+                    <div class="stake-detail-header">Total <span class="stake-card-highlight">BMBO</span></div>
+                    <div id="bamboo_balance" title="Please connect to BSC" class="stake-body-text">—</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stake-detail-header">Staked <span class="stake-card-highlight">SPND</span></div>
+                    <div id="stake" title="Please connect to BSC" class="stake-body-text">—</div>
+                </td>
+                <td>
+                    <input type="submit" class="action transparent-action" value="Unstake" onclick="unstakeAll()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="stake-detail-header">Max To <span class="stake-card-highlight">STAKE</span></div>
+                    <div id="max_left_to_stake" title="Please connect to BSC" class="stake-body-text">—</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="stake-detail-header">% of Pool</div>
+                    <div id="percent" title="Please connect to BSC" class="stake-body-text">—</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stake-detail-header">Earned <span class="stake-card-highlight">BMBO</span></div>
+                    <div id="earnings" title="Please connect to BSC" class="stake-body-text">—</div>
+                </td>
+                <td>
+                    <input type="submit" class="action" value="Harvest" onclick="claimBamboo()" id="claimbutton">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <div class="stake-card-header">Stake <span class="stake-card-highlight">SPND</span></div>
+                </td>
+                <td>
+                    <input style="display: none;" class="action" type="submit" id="approvebutton" value="Approve" onclick="approvePanda()">
+                    <div id="approvedText" class="stake-card-highlight" style="display: none; font-size: 18px;">
+                        <i class="fas fa-check-circle"></i> Approved
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input class="field" type="text" id="stakeAmount" name="stakeAmount" value="1.0" onkeypress="return isNumberKey(event)" />
+                </td>
+            </tr>
+            <tr>
+                <td class="actions" colspan="2">
+                    <input class="action transparent-action" type="submit" value="Max" onclick="setMaxStake()">
+                    <input class="action transparent-action" type="submit" id="stakebutton" value="Stake" onclick="stakePanda()">
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

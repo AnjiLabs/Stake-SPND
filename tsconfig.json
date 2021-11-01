@@ -1,0 +1,23 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "sourceMap": true,
+        "declaration": false,
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "isolatedModules": true,
+        "target": "ES2016",
+        "lib": [
+            "DOM",
+            "ES2016",
+            "ES2017.String"
+        ],
+        "esModuleInterop": true,
+        "types": [
+            "web3"
+        ]
+    }
+}

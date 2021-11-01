@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Bamboo Staking</title>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            body {
+                background: black;
+                color: white;
+                font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Please ensure you are connected with Trust Wallet or Metamask and the Binance Smart Chain before using this
+            page<br><br>
+        </h3>
+        <h3 id="warning" style="color:red;" style="display:none">
+            WARNING: YOU HAVE MORE THAN 50% OF YOUR PANDA HOLDINGS STAKED, YOUR REWARDS WILL BE SLASHED UNLESS YOU HAVE AT LEAST <span id="avoidamount" style="color:red;">AMOUNT</span> PANDA
+            IN YOUR WALLET. YOU WILL LOSE <span id="slashedreward" style="color:red;">AMOUNT</span> UNCLAIMED BAMBOO IF YOU ATTEMPT TO STAKE, UNSTAKE, OR CLAIM BAMBOO WITHOUT THE NECESSARY AMOUNT OF PANDA IN YOUR WALLET!
+        </h3>
+        <h3>Welcome to the Bamboo!</h3>
+        <h4>The Bamboo is a place where Panda holders can stake up to 50% of their Panda holdings (personal balance plus staked amount)* in order to obtain a percentage of every Bamboo transaction.</h4>
+        <h6>*If you have 50% of your Panda staked (i.e. your maximum allowed amount) and you wish to sell Panda from your personal balance, you will need to unstake your Panda first or else you will lose any unclaimed Bamboo rewards.</h6>
+        <br><br>
+
+        <div id="spnd-bmbo-staking"></div>
+
+
+        <!-- <div class="stake">
+            <table class="stake-table">
+                <thead>
+                    <tr>
+                        <td colspan="5">Total Pandas: <span id="panda_balance" title="Please connect to BSC">???</span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BMBO-SPND</td>
+                        <td>
+                            Total Bamboo
+                            <div id="bamboo_balance" title="Please connect to BSC">???</div>
+                        </td>
+                        <td>Staked Panda
+                            <div id="stake" title="Please connect to BSC">???</div>
+                            <input type="submit" class="action transparent-action" value="Unstake" onclick="unstakeAll()">
+                        </td>
+                        <td>Percentage of Panda Pool</td>
+                        <td>Earned Bamboo
+                            <div id="earnings" title="Please connect to BSC">???</div>
+                            <input type="submit" class="action" value="Claim" onclick="claimBamboo()" id="claimbutton">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Stake
+                        </td>
+                        <td colspan="4" class="actions">
+                            <input class="field" type="text" id="stakeAmount" name="stakeAmount" value="1.0" onkeypress="return isNumberKey(event)" />
+                            <input class="action transparent-action" type="submit" value="Max" onclick="setMaxStake()">
+                            <input class="action transparent-action" type="submit" id="stakebutton" value="Stake" onclick="stakePanda()">
+                            <input class="action" type="submit" id="approvebutton" value="Approve Panda" onclick="approvePanda()">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+
+        <h6>Note if you see ??? please ensure you are connected to BSC.</h5>
+    </body>
+</html>
